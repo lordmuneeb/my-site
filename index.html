@@ -7,9 +7,10 @@
   <style>
     /* Reset & Base */
     * { margin:0; padding:0; box-sizing:border-box; }
-    body { font-family:Arial,sans-serif; line-height:1.6; color:#333; padding:2rem; max-width:800px; margin:auto; }
+    body { font-family:Arial,sans-serif; line-height:1.6; color:#333; padding:2rem; max-width:900px; margin:auto; }
     a { color:#0073e6; text-decoration:none; }
     a:hover { text-decoration:underline; }
+    img { max-width:100%; height:auto; display:block; margin:auto; }
 
     /* Header */
     .hero { text-align:center; margin-bottom:3rem; }
@@ -19,13 +20,16 @@
     .contact-links a { margin:0 0.5rem; font-size:0.9rem; }
 
     /* Sections */
-    section { margin-bottom:2.5rem; }
-    h2 { font-size:1.8rem; border-bottom:2px solid #eee; padding-bottom:0.3rem; margin-bottom:1rem; }
+    section { margin-bottom:3rem; }
+    h2 { font-size:2rem; border-bottom:2px solid #eee; padding-bottom:0.3rem; margin-bottom:1rem; }
     ul { list-style:none; padding-left:0; }
-    ul li { margin-bottom:0.5rem; }
+    ul li { margin-bottom:0.75rem; }
 
     .role { font-weight:bold; }
     .dates { color:#666; font-size:0.9rem; }
+    .highlight { text-align:center; margin-bottom:2rem; }
+    .highlight img { width:100%; max-width:600px; border-radius:8px; }
+    .highlight p { margin-top:0.5rem; color:#555; }
     footer { text-align:center; font-size:0.9rem; color:#666; margin-top:3rem; }
   </style>
 </head>
@@ -34,10 +38,11 @@
   <header class="hero">
     <img src="static/img/profile.jpg" alt="Profile Picture" class="profile-pic">
     <h1>Muneebullah Nawaz</h1>
-    <p class="subtitle">Mechanical Engineering, The Ohio State University — Graduate Research Assistant</p>
+    <p class="subtitle">M.S. Mechanical Engineering, The Ohio State University — Graduate Research Assistant</p>
     <div class="contact-links">
-      <a href="mailto:nawaz.29@osu.edu">nawaz.29@osu.edu</a> |
-      <a href="http://linkedin.com/in/muneebullah-nawaz-abbasi-82b625146" target="_blank">LinkedIn</a>
+      <a href="mailto:nawaz.29@osu.edu">Email</a> |
+      <a href="http://linkedin.com/in/muneebullah-nawaz-abbasi-82b625146" target="_blank">LinkedIn</a> |
+      <a href="https://scholar.google.com/citations?hl=en&user=D6s07b4AAAAJ&view_op=list_works&gmla=ANZ5fUOJqEJ7_QUE-2WuXXJNUwfwLrlki-lBx2aP_RgDS7o2_FehlECWUpjBRs1cX31raaVPvdHUbHhCbWmgzs2n" target="_blank">Google Scholar</a>
     </div>
   </header>
 
@@ -51,13 +56,30 @@
     </p>
   </section>
 
+  <!-- Research Highlights -->
+  <section id="highlights">
+    <h2>Research Highlights</h2>
+    <div class="highlight">
+      <img src="static/img/highlight1.jpg" alt="Cordwood-Fueled Room Heater CFD">
+      <p><em>CFD simulation of cordwood-fueled room heater</em> showing temperature distribution and flow patterns.</p>
+    </div>
+    <div class="highlight">
+      <img src="static/img/highlight2.jpg" alt="Battery Pack Thermal Analysis">
+      <p><em>Thermal load analysis of battery pack</em> under various operating conditions.</p>
+    </div>
+    <div class="highlight">
+      <img src="static/img/highlight3.jpg" alt="Vertical Wind Tunnel Design">
+      <p><em>Vertical wind tunnel design model</em> for stable droplet levitation using data-driven optimization.</p>
+    </div>
+  </section>
+
   <!-- Education & Training -->
   <section id="education">
     <h2>Education &amp; Training</h2>
     <ul>
-      <li><span class="role">M.S. in Mechanical Engineering</span>, The Ohio State University, Columbus, OH <span class="dates">(Aug 2023–Present)</span></li>
-      <li><span class="role">M.S. in Mechanical Eng.</span>, KAUST, Thuwal, Saudi Arabia <span class="dates">(Jan 2021–Aug 2023)</span></li>
-      <li><span class="role">B.E. in Aerospace Eng.</span>, NUST, Islamabad, Pakistan <span class="dates">(Sep 2013–Sep 2017)</span></li>
+      <li><span class="role">M.S. in Mechanical Engineering</span>, The Ohio State University (Aug 2023–Present)</li>
+      <li><span class="role">M.S. in Mechanical Eng.</span>, KAUST (Jan 2021–Aug 2023)</li>
+      <li><span class="role">B.E. in Aerospace Eng.</span>, NUST (Sep 2013–Sep 2017)</li>
     </ul>
   </section>
 
@@ -78,8 +100,7 @@
     <ul>
       <li>
         <div class="role">Aero-elasticity & Dynamics Load Engineer</div>
-        <div>Turkish Aerospace Industries (TAI), Islamabad, Pakistan</div>
-        <div class="dates">Feb 2022–Jun 2022</div>
+        <div>Turkish Aerospace Industries (TAI), Islamabad, Pakistan <span class="dates">(Feb 2022–Jun 2022)</span></div>
         <ul>
           <li>Developed hybrid model for continuous turbulence load analysis on aircraft structures.</li>
           <li>Assisted aero-elastic behavior analysis under diverse load conditions.</li>
@@ -88,10 +109,9 @@
       </li>
       <li>
         <div class="role">Team Lead, Aircraft Design Optimization</div>
-        <div>Aviation Research Indigenization &amp; Development, Kamra, Pakistan</div>
-        <div class="dates">Oct 2017–May 2021</div>
+        <div>Aviation Research Indigenization & Development, Kamra, Pakistan <span class="dates">(Oct 2017–May 2021)</span></div>
         <ul>
-          <li>Created modeling &amp; simulation environment, reducing evaluation time by 75%.</li>
+          <li>Created modeling & simulation environment, reducing evaluation time by 75%.</li>
           <li>Led stochastic optimization algorithm development for real-world design problems.</li>
           <li>Automated aircraft conceptual design workflows for efficiency and accuracy.</li>
         </ul>
@@ -99,13 +119,13 @@
     </ul>
   </section>
 
-  <!-- Projects & Publications -->
+  <!-- Publications -->
   <section id="publications">
-    <h2>Projects &amp; Publications</h2>
+    <h2>Publications</h2>
     <ul>
-      <li>Analysis of Vortex-Induced Vibrations on Chimney and Guy Cable Effects under Variable Forcing Functions.</li>
-      <li>Directional Stability via Torsional Pendulum Concept for Aerospace Vehicles.</li>
-      <li>Control-Oriented Thermal Load Characterization Model for Electric School Bus (SAE Technical Paper).</li>
+      <li><a href="https://ieeexplore.ieee.org/document/8312209" target="_blank">Analysis of Vortex-Induced Vibrations on Chimney and Guy Cable Effects</a></li>
+      <li><a href="https://ieeexplore.ieee.org/abstract/document/7813231" target="_blank">Directional Stability via Torsional Pendulum Concept for Aerospace Vehicles</a></li>
+      <li><a href="https://www.sae.org/publications/technical-papers/content/2024-01-2404/" target="_blank">Control-Oriented Thermal Load Characterization Model for Electric School Bus</a></li>
     </ul>
   </section>
 
