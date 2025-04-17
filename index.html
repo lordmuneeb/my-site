@@ -25,13 +25,16 @@
     ul { list-style:none; padding-left:0; }
     ul li { margin-bottom:0.75rem; }
 
-    .role { font-weight:bold; }
-    .dates { color:#666; font-size:0.9rem; }
+    .role { font-weight:bold; margin-bottom:0.25rem; }
+    .dates { color:#666; font-size:0.9rem; margin-bottom:0.5rem; }
     .highlight { text-align:center; margin-bottom:2rem; }
     .highlight img { width:100%; max-width:600px; border-radius:8px; }
     .highlight.large img { max-width:800px; }
     .highlight p { margin-top:0.5rem; color:#555; }
     footer { text-align:center; font-size:0.9rem; color:#666; margin-top:3rem; }
+
+    /* Experience bullets */
+    .experience ul { list-style: disc inside; padding-left:1rem; }
   </style>
 </head>
 <body>
@@ -56,8 +59,8 @@
   <!-- Research Highlights -->
   <section id="highlights">
     <h2>Research Highlights</h2>
-    <div class="highlight">
-      <img src="static/img/sim11.jpg" alt="System-level simulation overview" class="large">
+    <div class="highlight large">
+      <img src="static/img/sim11.jpg" alt="System-level simulation overview">
       <p><em>System-level simulation results:</em> Vehicle powertrain, thermal load profiles, and window‑open effects over a drive cycle.</p>
     </div>
     <div class="highlight">
@@ -96,12 +99,12 @@
   </section>
 
   <!-- Professional Research Experience -->
-  <section id="experience">
+  <section id="experience" class="experience">
     <h2>Professional Research Experience</h2>
     <ul>
       <li>
-        <div class="role">Aero-elasticity &amp; Dynamics Load Engineer</div>
-        <div>Turkish Aerospace Industries (TAI), Islamabad, Pakistan <span class="dates">(Feb 2022–Jun 2022)</span></div>
+        <span class="role">Aero-elasticity &amp; Dynamics Load Engineer</span><br>
+        Turkish Aerospace Industries (TAI), Islamabad, Pakistan <span class="dates">(Feb 2022–Jun 2022)</span>
         <ul>
           <li>Developed hybrid model for continuous turbulence load analysis on aircraft structures.</li>
           <li>Assisted aero-elastic behavior analysis under diverse load conditions.</li>
@@ -109,8 +112,8 @@
         </ul>
       </li>
       <li>
-        <div class="role">Team Lead, Aircraft Design Optimization</div>
-        <div>Aviation Research Indigenization &amp; Development, Kamra, Pakistan <span class="dates">(Oct 2017–May 2021)</span></div>
+        <span class="role">Team Lead, Aircraft Design Optimization</span><br>
+        Aviation Research Indigenization &amp; Development, Kamra, Pakistan <span class="dates">(Oct 2017–May 2021)</span>
         <ul>
           <li>Created modeling &amp; simulation environment, reducing evaluation time by 75%.</li>
           <li>Led stochastic optimization algorithm development for real-world design problems.</li>
